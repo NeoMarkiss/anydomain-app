@@ -1,0 +1,15 @@
+provenance-node-app/
+├── public/
+│   ├── vite.svg             # Default favicon/logo
+│   └── manifest.json        # Web app manifest (for PWA/installable node setup)
+├── src/
+│   ├── App.jsx              # The main dashboard template (current code)
+│   ├── main.jsx             # React entry point that renders App.jsx
+│   └── index.css            # Global stylesheet (includes Tailwind CSS directives)
+├── .gitignore               # Standard git ignore file
+├── index.html               # The core HTML file loaded by the browser
+├── package.json             # Dependencies (React, lucide-react, tailwindcss)
+├── package-lock.json        # Dependency lockfile
+├── postcss.config.js        # Tailwind CSS processing config
+├── tailwind.config.js       # Tailwind theme and styling config
+└── vite.config.js           # Build tool configuration

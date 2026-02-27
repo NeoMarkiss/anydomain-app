@@ -1,0 +1,28 @@
+Here is the standard file tree structure for deploying this template "as is."
+
+Since this is designed to be a serverless, client-side application (where the browser acts as the local node), a standard Vite + React setup is the best fit.
+
+```text
+provenance-node-app/
+├── public/
+│   ├── vite.svg             # Default favicon/logo
+│   └── manifest.json        # Web app manifest (for PWA/installable node setup)
+├── src/
+│   ├── App.jsx              # The main dashboard template (current code)
+│   ├── main.jsx             # React entry point that renders App.jsx
+│   └── index.css            # Global stylesheet (includes Tailwind CSS directives)
+├── .gitignore               # Standard git ignore file
+├── index.html               # The core HTML file loaded by the browser
+├── package.json             # Dependencies (React, lucide-react, tailwindcss)
+├── package-lock.json        # Dependency lockfile
+├── postcss.config.js        # Tailwind CSS processing config
+├── tailwind.config.js       # Tailwind theme and styling config
+└── vite.config.js           # Build tool configuration
+
+```
+
+### Context for this Deploy:
+
+* **`src/App.jsx`**: This is where your current template lives. As developers begin replacing the mock data, they will likely split this into smaller components (e.g., `src/components/Dashboard.jsx`, `src/components/Workspace.jsx`).
+* **`index.html`**: Because this is a serverless front-end, this HTML file is technically all a user needs to load to initialize their "Node".
+* **Dependencies**: To make the current `App.jsx` run in this tree, the `package.json` only requires `react`, `react-dom`, `lucide-react` (for the icons), and standard Tailwind CSS packages.
